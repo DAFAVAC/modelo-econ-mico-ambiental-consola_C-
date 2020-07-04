@@ -1,4 +1,5 @@
 # modelo-economico-ambiental-consola_C#
+*********Nota:Usar solo minusculas para contestar.*********
 
 Este programa es una encuesta ,tomando como tópico un modelo económico y ambiental ,
 en cual tiene opciones según su respuesta .
