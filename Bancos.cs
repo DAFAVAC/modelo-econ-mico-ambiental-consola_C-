@@ -25,7 +25,7 @@ namespace ModeloEconomico
         }
         public void transacciones(string deudor)
         {
-            Console.WriteLine("Sr/Srta " + deudor + " le recordamos que tiene una deuda pendiente por el prestamo \n realiazdo,por lo que no puede hacer ninguna transaccion ");
+            Console.WriteLine("Sr/Srta " + deudor + " le recordamos que tiene una deuda pendiente por el prestamo \n realiazado,por lo que no puede hacer ninguna transaccion ");
         }
         public void transacciones()
         {

@@ -12,7 +12,7 @@ namespace ModeloEconomico
         public string Direccion { get; set; }
         public int Cantidad_Empleados { get; set; }
 
-        string material = Convert.ToString(ElementTienda.biberes);
+        string material = Convert.ToString(ElementTienda.viberes);
         Pedidos pedido = new Pedidos();
 
         public void articulosVendidos(int ventas)

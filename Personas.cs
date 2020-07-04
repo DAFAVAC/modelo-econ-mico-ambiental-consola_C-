@@ -14,10 +14,7 @@ namespace ModeloEconomico
         public float Sueldo { get; set; }
 
 
-        public void gastar()
-        {
 
-        }
         public float ahorrar(float sueldo, float porcentaje)
         {
             float ahorrado = sueldo*(porcentaje/100);

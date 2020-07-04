@@ -26,7 +26,7 @@ namespace ModeloEconomico
 
         public void contaminacion()
         {
-            Console.WriteLine("La empresa al trabajar con "+ material + "la cual deja residuos que contaminan el medio ambiente.");
+            Console.WriteLine("La empresa al trabajar con "+ material + " la cual deja residuos que contaminan el medio ambiente.");
         }
 
         public void distribuidores(string tienda)

@@ -2,7 +2,7 @@
 {
     public enum ElementTienda
     {
-        biberes,
+        viberes,
         accesorios,
         articulos_Varios
 
