@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ModeloEconomico
 {
-    class Empresas
+    class Empresas : IParalelo
     {
         Random number = new Random();
         public int Id { get { return number.Next(); } set { Id = value; } }
@@ -32,6 +34,19 @@ namespace ModeloEconomico
         public void distribuidores(string tienda)
         {
             Console.WriteLine("Sabia que "+tienda + " es distribuidor autorizado de "+this.Nombre);
+        }
+
+        public void Seek()
+        {
+            string direct = "C:\\";
+
+            string[] files = Directory.GetFiles(direct);
+            Parallel.ForEach(files, i =>
+            {
+                Console.WriteLine(i);
+            }
+            );
+            Console.WriteLine("Numero de archivos: {0} . ", files.GetLength(0));
         }
     }
 }

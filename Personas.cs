@@ -1,9 +1,11 @@
 ﻿
 using System;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace ModeloEconomico
 {
-    class Personas
+    class Personas : IParalelo
     {
         
         public int Id { get; set; }
@@ -30,6 +32,19 @@ namespace ModeloEconomico
         public void pagarDeudas()
         {
             Console.WriteLine(this.Nombre + "de las mesualidades con el interes de 43%, en su Banco.");
+        }
+
+        public void Seek()
+        {
+            string directorio = "C:\\";
+
+            string[] ficheros = Directory.GetDirectories(directorio);
+            Parallel.ForEach(ficheros, i =>
+            {
+                Console.WriteLine(i);
+            }
+            );
+            Console.WriteLine("Numero de carpetas: {0}  ", ficheros.GetLength(0));
         }
     }
 }

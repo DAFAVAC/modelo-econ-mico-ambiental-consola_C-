@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Diagnostics;
 
 namespace ModeloEconomico
 {
@@ -105,8 +106,25 @@ namespace ModeloEconomico
             pedido.despachoTienda(tienda.Nombre , empresa.Nombre , pedidostienda);
 
             Console.WriteLine("Toma conciencia en el impacto ambiental ,por cada compra que haces ,por un planeta mas limpio. ");
-            
 
+
+            Console.WriteLine("//////////////////////////////////WARNING////////////////////////////////////////////////////");
+
+            Console.WriteLine("Los archivos y carpetas siginetes son los que lleva en su disco \"C\": ");
+            Stopwatch stopwatch = new Stopwatch();
+            Stopwatch stopwatch1 = new Stopwatch();
+
+
+            stopwatch.Start();
+            persona.Seek();
+            stopwatch.Stop();
+            Console.Error.WriteLine("Busqueda buscada en paralelo tardo {0} milliseconds. ",
+                                    stopwatch.ElapsedMilliseconds);
+            stopwatch1.Start();
+            empresa.Seek();
+            stopwatch1.Stop();
+            Console.Error.WriteLine("Busqueda buscada en paralelo tardo {0} milliseconds. ",
+                                    stopwatch1.ElapsedMilliseconds);
 
 
 
